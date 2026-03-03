@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Sphere Puzzle Duo</title>
+    <style>
+        body { margin: 0; overflow: hidden; background: #000; font-family: 'Courier New', Courier, monospace; }
+        #gui { position: absolute; top: 20px; left: 20px; color: #0ff; pointer-events: none; text-shadow: 0 0 10px #0ff; }
+        #overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); color: white; display: flex; align-items: center; justify-content: center; z-index: 10; }
+    </style>
+</head>
+<body>
+    <div id="gui">
+        <h1 id="lvl-display">УРОВЕНЬ: 1/45</h1>
+        <div id="status">Ожидание напарника...</div>
+    </div>
+    <div id="overlay">Нажмите любую клавишу для входа в лобби</div>
+
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script type="importmap">
+        { "imports": {
+            "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+            "cannon": "https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.js"
+        }}
+    </script>
+    <script type="module" src="game.js"></script>
+</body>
+</html>
