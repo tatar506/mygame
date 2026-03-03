@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import * as CANNON from 'cannon';
 
-const socket = io('https://ТВОЙ-АДРЕС-НА-РЕНДЕРЕ.onrender.com'); // ЗАМЕНИТЬ ПОСЛЕ ДЕПЛОЯ
+const socket = io('https://mygame-sh3i.onrender.com'); // ЗАМЕНИТЬ ПОСЛЕ ДЕПЛОЯ
 const room = "lobby1";
 let currentLevelIdx = 0;
 let isGameStarted = false;
